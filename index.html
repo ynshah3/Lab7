@@ -156,6 +156,8 @@
           }).then(response => response.JSON)
             .then(entry => document.getElementById("output").innerHTML = new_entry)
             .catch((error) => document.getElementById("output").innerHTML = error);
+          document.getElementById("author").value = "";
+          document.getElementById("title").value = "";
           document.getElementById("recordForm").style.display = "none";
         }
       }
@@ -187,6 +189,8 @@
           }).then(response => response.JSON)
             .then(entry => document.getElementById("output").innerHTML = updated_entry)
             .catch((error) => document.getElementById("output").innerHTML = error);
+          document.getElementById("author").value = "";
+          document.getElementById("title").value = "";
           document.getElementById("recordForm").style.display = "none";
         }
       }
